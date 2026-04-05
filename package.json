@@ -1,24 +1,23 @@
 {
-  "name": "gift-wrap-qr-code",
-  "version": "1.0.0",
-  "description": "Fun gift wrap QR code reveal app with React and Framer Motion",
-  "main": "server.js",
+  "name": "gift-wrap-client",
+  "private": true,
+  "version": "0.0.1",
   "type": "module",
   "scripts": {
-    "start": "node server.js",
-    "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "server": "node server.js",
-    "client": "cd client && npm run dev",
-    "build": "cd client && npm install && npm run build"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
-  "keywords": ["react", "framer-motion", "qr-code", "fun"],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "express": "^4.18.2",
-    "cors": "^2.8.5"
+    "framer-motion": "^10.16.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^5.6.0"
   },
   "devDependencies": {
-    "concurrently": "^8.2.0"
+    "@types/react": "^18.2.43",
+    "@types/react-dom": "^18.2.17",
+    "@vitejs/plugin-react": "^4.2.1",
+    "vite": "^5.0.8"
   }
 }
