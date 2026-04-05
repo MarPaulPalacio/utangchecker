@@ -1,0 +1,24 @@
+{
+  "name": "gift-wrap-qr-code",
+  "version": "1.0.0",
+  "description": "Fun gift wrap QR code reveal app with React and Framer Motion",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "node server.js",
+    "client": "cd client && npm run dev",
+    "build": "cd client && npm run build"
+  },
+  "keywords": ["react", "framer-motion", "qr-code", "fun"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
