@@ -5,13 +5,13 @@ import './GiftWrap.css';
 
 export default function GiftWrap() {
   const [isOpened, setIsOpened] = useState(false);
-  const [config, setConfig] = useState({ amount: '109', message: 'Thank you!' });
+  const [config, setConfig] = useState({ amount: '239', message: 'Thank you!' });
 
   useEffect(() => {
     fetch('/api/qr-config')
       .then(res => res.json())
       .then(data => setConfig(data))
-      .catch(() => setConfig({ amount: '109', message: 'Thank you!' }));
+      .catch(() => setConfig({ amount: '239', message: 'Thank you!' }));
   }, []);
 
   // Ribbon animation
@@ -150,7 +150,7 @@ export default function GiftWrap() {
                     transition={{ delay: 0.5, duration: 0.5 }}
                   >
                     <p className="caption-title">💰 Froyo <FaArrowRight style={{ display: 'inline', marginLeft: '8px', marginRight: '8px' }} /> ${config.amount}</p>
-                    <p className="caption-subtitle"> Salamat 🙏</p>
+                    <p className="caption-subtitle"> Updated Salamat 🙏</p>
                   </motion.div>
                 </div>
               </motion.div>
